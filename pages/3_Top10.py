@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
 
-df = pd.read_csv('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/datafilm.csv')
+df = pd.read_csv('datafilm.csv')
 
 # Menentukan jumlah kluster (k=3)
 kmeans = KMeans(n_clusters=3, random_state=42)
@@ -14,16 +14,16 @@ df['Kluster'] = kmeans.fit_predict(df[['rating']])
 # Memberikan nama kluster berdasarkan kriteria rekomendasi
 df['Kluster'] = df['Kluster'].map({0: 'Sangat Direkomendasikan', 1: 'Kurang Direkomendasikan', 2: 'Cukup Direkomendasikan'})
 
-poster1 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster1.jpg')
-poster2 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster2.jpg')
-poster3 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster3.jpg')
-poster4 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster4.jpg')
-poster5 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster5.jpg')
-poster6 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster6.jpg')
-poster7 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster7.jpg')
-poster8 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster8.jpg')
-poster9 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster9.jpg')
-poster10 = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/poster10.jpg')
+poster1 = Image.open('poster1.jpg')
+poster2 = Image.open('poster2.jpg')
+poster3 = Image.open('poster3.jpg')
+poster4 = Image.open('poster4.jpg')
+poster5 = Image.open('poster5.jpg')
+poster6 = Image.open('poster6.jpg')
+poster7 = Image.open('poster7.jpg')
+poster8 = Image.open('poster8.jpg')
+poster9 = Image.open('poster9.jpg')
+poster10 = Image.open('poster10.jpg')
 
 st.title('TOP 10!')
 st.subheader('Top 10 Film Action Versi Sarang Film Terbaik')

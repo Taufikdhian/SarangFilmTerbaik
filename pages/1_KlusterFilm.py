@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/datafilm.csv')
+df = pd.read_csv('datafilm.csv')
 
 
 # Menentukan jumlah kluster (k=3)

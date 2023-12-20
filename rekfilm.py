@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from PIL import Image
 
-df = pd.read_csv('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/datafilm.csv')
+df = pd.read_csv('datafilm.csv')
 
 
 
@@ -17,7 +17,7 @@ df['Kluster'] = kmeans.fit_predict(df[['rating']])
 df['Kluster'] = df['Kluster'].map({0: 'Sangat Direkomendasikan', 1: 'Kurang Direkomendasikan', 2: 'Cukup Direkomendasikan'})
 
 # Judul halaman
-cover = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/cover.jpg')
+cover = Image.open('cover.jpg')
 st.image(cover)
 st.write('Selamat datang di Website kami ! Disini kami menyediakan rekomendasi film-film action terbaik sepanjang masa. Silahkan masukan nama Film untuk mengetahui apakah film tersebut kami rekomendasikan atau tidak !')
 

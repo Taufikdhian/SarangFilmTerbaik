@@ -11,7 +11,7 @@ st.subheader('Metode Sistem Rekomendasi')
 st.write('Sarang Film Terbaik menerapkan metode sistem rekomendasi yang canggih menggunakan teknik klustering K-Means untuk mengelompokkan rating film ke dalam tiga kluster berbeda. Dengan dataset yang mengandung informasi rating dari 2234 film, metode ini memberikan rekomendasi yang lebih sempurna dan sesuai dengan preferensi rating yang didapat dari penikmat film di seluruh dunia.')
 
 st.subheader('K-Means')
-visualisasi = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/visualisasi.png')
+visualisasi = Image.open('visualisasi.png')
 st.image(visualisasi)
 st.write('Metode Klustering K-Means adalah suatu teknik analisis data yang digunakan untuk mengelompokkan sejumlah data menjadi beberapa kelompok (kluster) yang memiliki kesamaan berdasarkan karakteristik tertentu. Dalam konteks ini, K-Means mengelompokkan data ke dalam sejumlah kluster berdasarkan pola atau kemiripan dalam atribut yang diukur. K-Means biasanya digunakan untuk analisis klustering pada data numerik dan dapat diterapkan dalam berbagai konteks, termasuk analisis konsumen, pengelompokan data geografis, dan dalam hal ini, pengelompokan rating film pada sistem rekomendasi. Kelemahan K-Means melibatkan kebutuhan untuk menentukan jumlah kluster sebelumnya dan kepekaannya terhadap inisialisasi kluster awal. Meskipun demikian, K-Means tetap menjadi salah satu metode klustering yang populer dan efisien.')
 
@@ -19,7 +19,7 @@ st.write('Metode Klustering K-Means adalah suatu teknik analisis data yang digun
 st.subheader('Profil')
 col1, col2 = st.columns(2)
 with col1:
-    profil = Image.open('C:/Users/ACER/Documents/kuliah/s5/Apk Web/Streamlit/profil.jpg')
+    profil = Image.open('profil.jpg')
     st.image(profil)
 
 with col2:
