@@ -19,7 +19,7 @@ st.write('Metode Klustering K-Means adalah suatu teknik analisis data yang digun
 st.subheader('Profil')
 col1, col2 = st.columns(2)
 with col1:
-    profil = Image.open('profil.jpg')
+    profil = Image.open('profil.JPG')
     st.image(profil)
 
 with col2:
